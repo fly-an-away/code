@@ -1,0 +1,147 @@
+.modal__btn {
+	border: none;
+	background-color: #f36262;
+	padding: 5px 10px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+._modal {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .2s;
+	pointer-events: none;
+	&._active {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+	}
+}
+
+.modal-bg {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,.96);
+	display: flex;
+	padding: 20px;
+}
+
+.modal-body {
+	padding: 24px;
+	background-color: #fff;
+	min-width: 320px;
+    min-height: 676px;
+	/*margin: auto;
+	max-height: 90%;
+	overflow: auto;*/
+	border-radius: 16px;
+	position: relative;
+    top: 0px;
+    right: 0px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    border-left: 1px solid #D9FFF5;
+}
+
+.modal-close {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	cursor: pointer;
+}
+
+h2 {
+    font-family: 'TTLakes';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    margin-top: 40px;
+}
+
+input {
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    width: 288px !important;
+    height: 48px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+form {
+    & p {
+        width: 288px !important;
+        height: 64px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #7E7E82;
+        margin-bottom: 16px;
+    }
+    & a {
+        color: red;
+    }
+}
+
+.btn-send {
+    background-image: url(../img/btn-send.svg);
+    background-color: white;
+    width: 136px;
+    height: 32px;
+    margin-left: 160px;
+    border: none;
+}
+
+.modal-call-header {
+    height: 120px;
+}
+
+.modal-call-title {
+    padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .btn-send {
+        margin-left: 120px;
+    }
+
+    .modal-body {
+        min-width: 440px;
+        min-height: 940px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+    }
+
+    .modal-close {
+        left: -60px;
+    }
+
+    .modal-call-title {
+        padding-top: 0px;
+    }
+
+    input {
+        width: 376px !important;
+        height: 48px;
+    }
+    
+    form {
+        & p {
+            width: 376px !important;
+            height: 48px;
+            margin: 32px 0px;
+        }
+    }
+    
+    .btn-send {
+        margin-left: 255px;
+    }
+}

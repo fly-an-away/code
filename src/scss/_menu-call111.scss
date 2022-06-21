@@ -1,0 +1,18 @@
+.section-menu__call {
+    display: none;
+}
+
+.show__call {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    min-height: 676px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    background-color: $white;
+}

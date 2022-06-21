@@ -1,0 +1,128 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus{
+  outline: 2px solid transparent;
+}
+
+body {
+  overflow-anchor: none;
+  margin: 0;
+  font-family: 'TTLakes';
+  color: $main-text-color;
+  background-color: $background;
+  scroll-behavior: smooth;
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+/*Меняем цвет плейсхолдера в инпуте Сафари и Хром*/
+/*Меняем цвет плейсхолдера в инпуте для Мозилы */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: $gray;
+}
+
+input:focus,
+textarea:focus {
+  outline:none;
+}
+
+.btn__burger {
+  background-image: url(../img/svg/burger.svg);
+  margin-right: 16.73px;
+}
+
+.btn__logo {
+  background-image: url(../img/svg/Logo.svg);
+}
+
+.btn__repair {
+  background-image: url(../img/svg/repair.svg);
+}
+
+.btn__checkstatus {
+  background-image: url(../img/svg/checkstatus.svg);
+  margin-left: 16.73px;
+}
+
+.btn__call {
+  background-image: url(../img/svg/call.svg);
+  background-repeat: no-repeat;
+}
+
+.btn__chat {
+  background-image: url(../img/svg/chat.svg);
+  background-repeat: no-repeat;
+  margin-left: 16px;
+}
+
+.btn__profile {
+  background-image: url(../img/svg/profile.svg);
+  background-repeat: no-repeat;
+  margin-left: 16px;
+}
+
+.main__btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+}
+
+.logo__btn {
+  width: 96.55px;
+  height: 50.81px;
+  background-color: #FFFFFF;
+  padding: 0px;
+  border: none;
+}
+.main {
+  display: block;
+  @media (min-width: 1440px) {
+    display: flex;
+    position: relative;
+    box-shadow: none;
+    width: 1440px;
+    margin: 0 auto;
+}
+}

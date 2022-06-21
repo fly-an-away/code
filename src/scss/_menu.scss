@@ -1,0 +1,262 @@
+.section-wrapper {
+    width: 320px;
+    min-height: 676px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+.section {
+    display: none;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    min-height: 676px;
+    font-family: 'TTLakes';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    background-color: $white;
+}
+
+.section a {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.section li {
+    margin-bottom: 20px;
+}
+
+.section-header {
+    min-width: 320px;
+    min-height: 134.01px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-header__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-header__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.main__btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn__burger {
+    background-image: url(../img/btn-close.svg);
+    cursor: pointer;
+
+}
+
+.btn__logo-menu {
+    background-image: url(../img/svg/Logo.svg);
+    cursor: pointer;
+    width: 96.55px;
+    height: 50.81px;
+    background-color: #FFFFFF;
+    padding: 0px;
+    border: none;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.btn__search-menu {
+    background-image: url(../img/svg/search.svg);
+    cursor: pointer;
+    margin: 8px 0px 14px 0px;
+}
+
+/*.logo__btn {
+    width: 96.55px;
+    height: 50.81px;
+    background-color: #FFFFFF;
+    padding: 0px;
+    border: none;
+}*/
+
+.section-list {
+    list-style: none;
+    border-right: 1px solid #F2F2F2;
+    margin-left: 24px;
+}
+
+.section-list a {
+    font-size: 16px;
+    font-family: 'TTLakes';
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.section a:hover {
+    opacity: 0.5;
+    transition-duration: 2s;
+}
+
+.section-list li:first-child::before {
+    position: absolute;
+    content: url(../img/svg/highlight.svg);
+    top: 125px;
+    left: 0px;
+}
+
+.btn__call {
+    background-image: url(../img/svg/call.svg);
+}
+
+.btn__chat {
+    background-image: url(../img/svg/chat.svg);
+}
+
+.btn__profile {
+    background-image: url(../img/svg/profile.svg);
+}
+
+.section__bottom {
+    display: flex;
+    flex-direction: row; 
+    list-style: none;
+    position: absolute;
+    top: 75%;
+}
+
+.section__bottom li {
+    margin-left: 3.12%;
+}
+
+.mail {
+    display: inline-block;
+    position: absolute;
+    height: 24px;
+    left: 3.12%;
+    right: 83.07%;
+    top: 83%;
+}
+
+.tel {
+    display: inline-block;
+    position: absolute;
+    min-width: 320px;
+    height: 32px;
+    left: 3.12%;
+    right: 71.35%;
+    top: 88%;
+    font-weight: bold;
+    font-family: 'TTLakes';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+}
+
+.lang {
+    display: inline-block;
+    position: absolute;
+    min-width: 320px;
+    top: 93%;
+}
+
+.lang_ru {
+    display: block;
+    position: absolute;
+    left: 3.12%;
+    width: 24px;
+    height: 24px;  
+    margin-right: 7px;
+}
+
+.lang_en {
+    display: block;
+    position: absolute;
+    left: 11.33%;
+    width: 24px;
+    height: 24px;  
+}
+
+.lang_ch {
+    display: block;
+    position: absolute;
+    left: 19.54%;
+    width: 24px;
+    height: 24px;  
+}
+
+.show {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 320px;
+    min-height: 676px;
+    background-color: $white;
+}
+
+.show-wrap {
+    display: block;
+}
+
+@media (min-width: 768px) {
+
+    .section {
+        width: 100vw;
+        background-color: transparent;
+    }
+
+    .section li {
+        margin-bottom: 32px;
+    }
+
+    .section-wrapper {
+        min-height: 1024px;
+        visibility: visible;
+        background-color: $white;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .section {
+        display: block;
+    position: relative;
+    box-shadow: none;
+    & .btn__burger{
+        display: none;
+    }
+    } 
+
+    .section__bottom {
+        top: 43%;
+      }
+
+      .mail {
+        top: 46%;
+      }
+
+      .tel {
+        top: 48%;
+      }
+      
+      .lang {
+        top: 52%;
+      }
+      .section-wrapper {
+        box-shadow: none;
+        min-height: 1925px;
+      }
+}
